@@ -235,7 +235,7 @@ const Item = ({ item, onRent, backdrop }) => {
               }
               <div className="spring" />
               <div className="Item__button button" onClick={() => onRent(item)}>
-                Rent
+                Rent it
               </div>
             </> :
             <>
