@@ -38,7 +38,18 @@ deploy:
     command: helm upgrade --install worker worker/chart --set image=${OKTETO_BUILD_WORKER_IMAGE}
   - name: Deploy API
     command: helm upgrade --install api api/chart --set image=${OKTETO_BUILD_API_IMAGE} --set load=${API_LOAD_DATA:-true}
-
+external:
+  mongodb:
+    icon: database
+    notes: docs/atlas.md
+    endpoints:
+    - name: Try it out!
+      url: https://cloud.mongodb.com/v2/642e1b2d158d147ee1909e
+  lambda:
+    icon: function
+    notes: docs/lambda.md
+    endpoints:
+    - name: function
 dev:
   frontend:
     image: ${OKTETO_BUILD_FRONTEND_DEV_IMAGE}
