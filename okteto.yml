@@ -50,6 +50,7 @@ external:
     notes: docs/lambda.md
     endpoints:
     - name: Try it out!
+      url: https://cloud.filmcompany.dev/lambda/serv1
 dev:
   frontend:
     image: ${OKTETO_BUILD_FRONTEND_DEV_IMAGE}
