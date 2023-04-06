@@ -49,7 +49,7 @@ external:
     icon: function
     notes: docs/lambda.md
     endpoints:
-    - name: function
+    - name: Try it out!
 dev:
   frontend:
     image: ${OKTETO_BUILD_FRONTEND_DEV_IMAGE}
