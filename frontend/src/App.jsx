@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Loader from './Loader';
 import Users from './Users';
 
+
+
 import './App.css';
 
 const compact = (movies = []) => {
